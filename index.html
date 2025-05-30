@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>ShadSmart | Empowering Learners</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-list nav-left">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">CBC</a></li>
+      </ul>
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="ShadSmart CBC and TVET platform for learning resources" />
+      </div>
+      <ul class="nav-list nav-right">
+        <li><a href="#">TVET</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger-btn" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">CBC</a></li>
+        <li><a href="#">TVET</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>ShadSmart</span></h1>
+      <p>
+        Empowering learners through innovative online education.<br>
+        <span class="hero-extra">
+          Discover CBC and TVET resources, connect with a vibrant learning community, and unlock your full potential.
+        </span>
+      </p>
+      <a href="#" class="hero-btn">Get Started</a>
+    </div>
+  </section>
+
+
+
+
+
+
+<!-- Info Section -->
+<section class="info-section">
+  <div class="info-text">
+    <span class="info-label">HOW IT WORKS</span>
+    <h2>We Help You<br>Excel in School & College</h2>
+    <p>
+      Browse CBC and TVET resources, access notes, past papers, and revision exams. Start your academic journey with ShadSmart.
+    </p>
+    <a href="#" class="btn-secondary">Find Resources</a>
+  </div>
+  <div class="info-img">
+    <img src="assets/art.png" alt="ShadSmart Illustration" />
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SERVICES SECTION -->
+<section class="shadsmart-services-section" aria-labelledby="services-title">
+  <div class="section-header">
+    <span class="section-label">SERVICES</span>
+    <h2 id="services-title">Your Path to Academic Success</h2>
+    <p class="section-desc">
+      Discover expert support for CBC and TVET learners. Access notes, revision papers, and guidance for a brighter future.
+    </p>
+  </div>
+  <div class="service-cards-row">
+    <div class="service-card card-yellow" role="region" aria-labelledby="cbc-title">
+      <div class="service-card-body">
+        <h3 id="cbc-title">CBC Revision &amp; Notes</h3>
+        <p>Organized CBC notes and revision papers for all grades, from Baby Class to Grade 9.</p>
+        <a href="#" class="btn-service" role="button" tabindex="0" aria-label="Learn more about CBC Revision & Notes">Learn More</a>
+      </div>
+      <img src="assets/cbc.png" alt="CBC Revision and Notes illustration" class="service-art" />
+    </div>
+    <div class="service-card card-white" role="region" aria-labelledby="tvet-title">
+      <div class="service-card-body">
+        <h3 id="tvet-title">TVET Modules &amp; Exams</h3>
+        <p>Access TVET (CDACC) modules, past exams, and resources by department and course.</p>
+        <a href="#" class="btn-service btn-outline" role="button" tabindex="0" aria-label="Learn more about TVET Modules & Exams">Learn More</a>
+      </div>
+      <img src="assets/tvet.png" alt="TVET Modules and Exams illustration" class="service-art" />
+    </div>
+  </div>
+  <div class="service-card card-wide coaching-card" role="region" aria-labelledby="coaching-title">
+    <div class="service-card-body">
+      <h3 id="coaching-title">Academic Coaching</h3>
+      <p>
+        Personalized support to help you build study skills, manage revision, and achieve your learning goals. ShadSmart coaches guide you to success in CBC and TVET.
+      </p>
+      <a href="#" class="btn-service" role="button" tabindex="0" aria-label="Learn more about Academic Coaching">Learn More</a>
+    </div>
+    <img src="assets/coaching.png" alt="Academic Coaching illustration" class="service-art-wide" />
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section class="shadsmart-testimonials-section" aria-labelledby="testimonials-title">
+  <div class="testimonials-layout">
+    <div class="testimonials-left">
+      <span class="section-label">TESTIMONIALS</span>
+      <h2 id="testimonials-title">What Our Clients Are Saying</h2>
+      <p class="section-desc">
+        Positive experiences from CBC and TVET students who have benefited from ShadSmart resources and support.
+      </p>
+      <div class="testimonials-nav">
+        <button class="arrow-btn" id="arrow-left" aria-label="Previous testimonial">&#8592;</button>
+        <button class="arrow-btn" id="arrow-right" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+    <div class="testimonials-cards" id="testimonials-cards" aria-live="polite">
+      <!-- Cards will be injected by JS -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="shadsmart-partners-section">
+  <div class="partners-card">
+    <span class="partners-label">Our Partners</span>
+    <img src="assets/partner1.png" alt="KICD" class="partner-logo" />
+    <img src="assets/partner2.png" alt="Kenya Literature Bureau" class="partner-logo" />
+    <img src="assets/partner3.jpg" alt="Longhorn" class="partner-logo" />
+    <img src="assets/partner4.jpg" alt="Storymoja" class="partner-logo" />
+    <img src="assets/partner5.png" alt="Amazon" class="partner-logo" />
+  </div>
+</section>
+
+
+
+
+
+
+<section class="resources-section">
+  <div class="resources-header">
+    <span class="resources-label">EXPLORE & LEARN</span>
+    <h2>Resources for Your Success</h2>
+    <p>
+      Explore expert insights, CBC & TVET guides, and tools to support your learning journey with ShadSmart.
+    </p>
+  </div>
+  <div class="resources-cards-row">
+    <div class="resource-card">
+      <h3>Articles & Guides</h3>
+      <p>Practical tips for CBC and TVET study, revision, and exam success.</p>
+      <button class="btn-resource yellow">Explore</button>
+    </div>
+    <div class="resource-card">
+      <h3>Audio Lessons & Practice</h3>
+      <p>Audio sessions for CBC and TVET revision, plus practice exercises.</p>
+      <button class="btn-resource teal">Explore</button>
+    </div>
+    <div class="resource-card">
+      <h3>Workshops & Webinars</h3>
+      <p>Live and recorded sessions with ShadSmart educators and trainers.</p>
+      <button class="btn-resource pink">Explore</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- COMMUNITY SECTION -->
+<section class="shadsmart-community-section">
+  <div class="community-card">
+    <div class="community-content">
+      <span class="community-label">COMMUNITY</span>
+      <h2>You’re Not Alone on This Journey</h2>
+      <p>
+        Connect with others, share experiences, and find encouragement in a safe, supportive space.
+      </p>
+      <button class="btn-primary">Join The Community</button>
+    </div>
+    <img src="assets/community.png" alt="ShadSmart Community" class="community-art" />
+  </div>
+</section>
+
+
+
+
+
+
+
+
+ <!-- FAQ SECTION -->
+ <section class="shadsmart-faq-section">
+  <div class="faq-left">
+    <span class="faq-label">NEED HELP?</span>
+    <h2>Frequently Asked Questions</h2>
+    <p class="faq-desc">
+      Find answers to common questions about our services, learning, and support at ShadSmart.
+    </p>
+    <div class="faq-illustration">
+      <img src="assets/faq.png" alt="ShadSmart FAQ" />
+    </div>
+  </div>
+  <div class="faq-right">
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How do I access CBC or TVET resources?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Sign up or log in to your ShadSmart account, then browse our resources by subject or course.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are ShadSmart notes and modules free?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes! Most notes and modules are free. Some premium resources may require a subscription.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What’s the difference between CBC and TVET materials?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">CBC materials are for basic education (primary & junior secondary), while TVET is for technical/vocational training.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I get revision papers and past exams?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes! We provide revision papers and past exams for both CBC and TVET learners, updated regularly.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is my information and activity kept private?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Absolutely. ShadSmart never shares your data. Your learning activity is confidential and secure.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+ <!-- CONTACT SECTION -->
+ <section class="shadsmart-contact-section">
+  <div class="contact-header">
+    <span class="contact-label">GET IN TOUCH</span>
+    <h2>We’re Here to Support You</h2>
+    <p>
+      Whether you have questions, need help getting started, or want to learn more — reach out anytime.
+    </p>
+  </div>
+  <div class="contact-card">
+    <div class="contact-details">
+      <h3>Contact Details:</h3>
+      <p><b>Email:</b> support@shadsmart.com</p>
+      <p><b>Phone:</b> +254 707315280</p>
+      <p><b>Address:</b> 123 Learning Lane, Nairobi, Kenya</p>
+      <div class="contact-socials">
+        <a href="#"><img src="assets/linkedln.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="assets/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
+      </div>
+      <p class="contact-note">We typically respond within 12 hours.</p>
+    </div>
+    <form class="contact-form">
+      <h3>Send Us a Message</h3>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Main Cards Section -->
+  <section class="cards-section">
+    <div class="card card-left">
+      <h2>ShadSmart</h2>
+      <div class="links-columns">
+        <div>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">CBC Resources</a>
+          <a href="#">TVET Resources</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <div>
+          <a href="#">Terms Of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2025 ShadSmart. All Rights Reserved.
+      </div>
+    </div>
+    <div class="card card-right">
+      <div>
+        <h3>Find<br>Support,<br>Guidance,<br>and Balance.</h3>
+        <a href="#" class="cta-btn">Find Support Now</a>
+      </div>
+      <div class="card-art">
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80" alt="ShadSmart Community" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <span>ShadSmart &mdash; Empowering Learners</span>
+      <span class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
