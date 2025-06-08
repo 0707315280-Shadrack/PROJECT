@@ -1,28 +1,19 @@
-
 const testimonials = [
   {
-    text: `"ShadSmart made it so easy to find the right mentorship for me. The sessions have truly transformed my mindset, and I feel more in control of my learning than ever before!"`,
-    author: "— Anna R., 19",
-    bg: "#FFF7E0",
-    color: "#183a37"
+    text: "Participating in the Shadsmart contest motivated me to study harder and discover new learning materials. I gained confidence in my CBC subjects and improved my grades!",
+    author: "— Mercy N., Student"
   },
   {
-    text: `"I was struggling with revision and motivation, but the ShadSmart study groups and resources have helped me regain balance. I finally feel confident about my education!"`,
-    author: "— Mark S., 22",
-    bg: "#183a37",
-    color: "#fff"
+    text: "The Shadsmart contest challenged me to apply my TVET skills in real scenarios. It was exciting, and the resources provided made revision so much easier.",
+    author: "— Brian K., TVET Trainee"
   },
   {
-    text: `"The CBC resources are so practical and easy to follow. I improved my grades and even enjoyed the process!"`,
-    author: "— Faith K., 17",
-    bg: "#FFD600",
-    color: "#183a37"
+    text: "Thanks to the Shadsmart contest, I accessed revision papers and notes that helped me prepare for my exams effectively. I highly recommend it to other students.",
+    author: "— Faith O., High School Student"
   },
   {
-    text: `"The TVET guides and webinars opened new career paths for me. ShadSmart is a game-changer!"`,
-    author: "— Brian O., 24",
-    bg: "#f8f8f6",
-    color: "#183a37"
+    text: "Winning a prize in the Shadsmart contest was a great achievement! The platform’s learning materials and supportive community made all the difference.",
+    author: "— Kelvin M., Contest Winner"
   }
 ];
 
@@ -55,20 +46,7 @@ document.getElementById('arrow-left').addEventListener('click', () => {
 document.getElementById('arrow-right').addEventListener('click', () => {
   current = (current + 1) % testimonials.length;
   renderTestimonials();
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
 
 
 
@@ -108,4 +86,35 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FAQ Accordion
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // Close all FAQ items
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      // Toggle the clicked item
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+});
