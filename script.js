@@ -1,22 +1,23 @@
-<<<<<<< HEAD
+
 const testimonials = [
   {
-    text: `"Solus made it so easy to find the right therapist for me. The sessions have truly transformed my mindset, and I feel more in control of my emotions than ever before!"`,
-    author: "— Anna R., 32"
+    text: `"Participating in the Shadsmart contest motivated me to study harder and discover new learning materials. I gained confidence in my CBC subjects and improved my grades!"`,
+    author: "— Mercy N., Student"
   },
   {
-    text: `"I was struggling with stress and anxiety, but the mindfulness programs at Solus have helped me find balance. I finally feel confident prioritizing my mental well-being."`,
-    author: "— Mark S., 41"
+    text: `"The Shadsmart contest challenged me to apply my TVET skills in real scenarios. It was exciting, and the resources provided made revision so much easier."`,
+    author: "— Brian K., TVET Trainee"
   },
   {
-    text: `"The support and guidance I received changed my life. ShadSmart’s approach is compassionate and effective."`,
-    author: "— Leah T., 28"
+    text: `"Thanks to the Shadsmart contest, I accessed revision papers and notes that helped me prepare for my exams effectively. I highly recommend it to other students."`,
+    author: "— Faith O., High School Student"
   },
   {
-    text: `"Thanks to ShadSmart, I’ve developed skills that help me manage daily challenges with confidence and calm."`,
-    author: "— David W., 35"
+    text: `"Winning a prize in the Shadsmart contest was a great achievement! The platform’s learning materials and supportive community made all the difference."`,
+    author: "— Kelvin M., Contest Winner"
   }
 ];
+
 
 let current = 0;
 
@@ -51,17 +52,6 @@ document.getElementById('arrow-right').addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // FAQ Accordion
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.faq-question').forEach(function(btn) {
@@ -75,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
 
 
 
@@ -98,60 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-=======
-const testimonials = [
-  {
-    text: `"ShadSmart made it so easy to find the right mentorship for me. The sessions have truly transformed my mindset, and I feel more in control of my learning than ever before!"`,
-    author: "— Anna R., 19",
-    bg: "#FFF7E0",
-    color: "#183a37"
-  },
-  {
-    text: `"I was struggling with revision and motivation, but the ShadSmart study groups and resources have helped me regain balance. I finally feel confident about my education!"`,
-    author: "— Mark S., 22",
-    bg: "#183a37",
-    color: "#fff"
-  },
-  {
-    text: `"The CBC resources are so practical and easy to follow. I improved my grades and even enjoyed the process!"`,
-    author: "— Faith K., 17",
-    bg: "#FFD600",
-    color: "#183a37"
-  },
-  {
-    text: `"The TVET guides and webinars opened new career paths for me. ShadSmart is a game-changer!"`,
-    author: "— Brian O., 24",
-    bg: "#f8f8f6",
-    color: "#183a37"
-  }
-];
 
-let current = 0;
 
-function renderTestimonials() {
-  const cards = [];
-  for (let i = 0; i < 2; i++) {
-    const idx = (current + i) % testimonials.length;
-    const t = testimonials[idx];
-    cards.push(`
-      <div class="testimonial-card" style="background:${t.bg};color:${t.color}">
-        <div class="testimonial-text">${t.text}</div>
-        <div class="testimonial-author">${t.author}</div>
-      </div>
-    `);
-  }
-  document.getElementById('testimonials-cards').innerHTML = cards.join('');
-}
-renderTestimonials();
-
-document.getElementById('arrow-left').onclick = function() {
-  current = (current - 1 + testimonials.length) % testimonials.length;
-  renderTestimonials();
-};
-document.getElementById('arrow-right').onclick = function() {
-  current = (current + 1) % testimonials.length;
-  renderTestimonials();
-};
 
 
 
@@ -189,21 +126,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Hamburger menu toggle
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    hamburger.addEventListener('click', function() {
-      hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-    });
-    // Close menu when a link is clicked
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        mobileMenu.classList.remove('active');
-      });
-    });
-  });
->>>>>>> f54dfa4c8bce5a6af8e76917367692430b1162b7
-  
